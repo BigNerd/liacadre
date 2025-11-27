@@ -5,11 +5,10 @@ with a clear process, toolchain setup, cloud configuration, and architectural gu
 
 ## Contents
 
-- Overview & documentation
-- Development environment setup
-- Cloud service configuration
-- Starter templates (frontend & backend)
-- Automation scripts
+- Supported Web App Architecture
+- Development Environment Setup
+- Cloud Service Setup
+- Starter Templates (frontend & backend)
 
 ## Status
 
@@ -18,5 +17,5 @@ into dedicated liacadre-* repositories.
 
 ## Vision
 
-A unified workflow for building, deploying, and scaling custom web apps with
+A comprehensive workflow for building, and deploying affordable custom web apps quickly with
 repeatable processes and AI-assisted automation.
