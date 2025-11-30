@@ -13,19 +13,20 @@ Liacadre promotes a **modern, cost-effective architecture** that prioritizes:
 ## 🖥️ Frontend Stack
 
 ### **Framework & Architecture**
-- **React Native for Web** - Single codebase for web and mobile
-- **Single Page Application (SPA)** with client-side routing
+- **Expo** with React Native for unified web and mobile development
+- **Expo Router** for file-based navigation across platforms
 - **Static Site Generation** for marketing pages and SEO content
 
-### **State Management & Data**
-- **TanStack Query** (React Query) for server state management
-- **Zustand** for lightweight client state
+### **Data & State Management**
+- **Direct Supabase calls** with async/await for API interactions
+- **React built-in state** (useState, useContext) for local state
+- **Expo SecureStore** for persistent user data and tokens
 - **Real-time subscriptions** via Supabase WebSocket connections
 
 ### **Authentication & Security**
 - **Supabase Auth** with social providers and magic links
+- **Expo AuthSession** for OAuth flows on mobile
 - **Row Level Security (RLS)** enforced at the database level
-- **JWT tokens** for secure API communication
 
 ### **Hosting & Deployment**
 - **Cloudflare Pages** for static site hosting
@@ -34,11 +35,11 @@ Liacadre promotes a **modern, cost-effective architecture** that prioritizes:
 - **Preview deployments** for every pull request
 
 ### **Key Benefits**
-✅ Fast development and deployment  
-✅ Excellent performance with CDN caching  
-✅ Cost-effective scaling  
-✅ Future mobile app compatibility  
-✅ SEO-friendly with static content  
+✅ Single codebase for web, iOS, and Android  
+✅ Simple, direct API calls without complex state libraries  
+✅ Built-in navigation and native capabilities  
+✅ Fast development with Expo's tooling  
+✅ Easy deployment to app stores and web  
 
 ---
 

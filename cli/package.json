@@ -1,0 +1,37 @@
+{
+  "name": "@liacadre/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Liacadre project generator - Expo + Supabase setup tool",
+  "main": "dist/index.js",
+  "bin": {
+    "liacadre": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "dev:test": "rm -rf /tmp/liacadre-test && LIACADRE_TEST_DIR=/tmp/liacadre-test npm run dev create",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/index.js",
+    "fresh-install": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "keywords": ["expo", "supabase", "react-native", "cli", "generator"],
+  "author": "Liacadre",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^14.0.2",
+    "inquirer": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

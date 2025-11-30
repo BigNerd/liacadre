@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // Compile to modern JavaScript (ES2022 features like top-level await)
+    "target": "ES2022",
+    
+    // Keep native ES modules (import/export) instead of converting to require()
+    "module": "ESNext",
+    
+    // Resolve modules like Node.js does (checks node_modules, follows package.json)
+    "moduleResolution": "Node",
+    
+    // Output compiled JavaScript to dist/ folder
+    "outDir": "./dist",
+    
+    // Enable all strict type-checking options
+    "strict": true,
+    
+    // Better compatibility when importing CommonJS modules
+    "esModuleInterop": true,
+    
+    // Skip type-checking of library .d.ts files for faster compilation
+    "skipLibCheck": true,
+    
+    // Prevent bugs from inconsistent file name casing (import "./File" vs "./file")
+    "forceConsistentCasingInFileNames": true,
+    
+    // Generate .d.ts type definition files for library consumers
+    "declaration": true,
+    
+    // Generate source maps for .d.ts files
+    "declarationMap": true,
+    
+    // Generate .js.map files for debugging (maps compiled JS back to TS source)
+    "sourceMap": true,
+    
+    // Load Vitest global test functions (describe, it, expect) without imports
+    "types": ["vitest/globals"]
+  },
+  
+  // Compile all TypeScript files in src/ and tests/ directories
+  "include": ["src/**/*", "tests/**/*"]
+}
